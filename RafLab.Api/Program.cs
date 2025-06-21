@@ -1,6 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using Polly;
 using RafLab.Application.Services;
 using RafLab.Application.Services._i;
 using RafLab.Core.Infrastucture;
@@ -27,7 +28,8 @@ namespace RafLab.Api
                 var settings = sp.GetRequiredService<IOptions<ApiSettings>>().Value;
                 client.BaseAddress = new Uri(settings.BaseUrl);
                 client.DefaultRequestHeaders.Add("x-api-key", settings.ApiKey);
-            });
+            }).AddTransientHttpErrorPolicy(policy =>
+                              policy.WaitAndRetryAsync(2, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)))); ;
 
             builder.Services.AddDbContext<ReqresUserDbContext>(options =>
     options.UseInMemoryDatabase("UserCacheDatabase"));
