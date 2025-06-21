@@ -1,0 +1,6 @@
+@RafLab.Api_HostAddress = http://localhost:5132
+
+GET {{RafLab.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

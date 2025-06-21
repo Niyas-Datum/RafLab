@@ -1,9 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RafLab.Core", "RafLab.Core\RafLab.Core.csproj", "{2A840ED8-12B7-4368-BC2A-D0E2478B2881}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RafLab.Application", "RafLab.Application\RafLab.Application.csproj", "{462CD4A9-2BEC-426E-921B-A057294C48AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RafLab.Shared", "RafLab.Shared\RafLab.Shared.csproj", "{82380952-7BDC-4DCA-8FCB-B6487C8DC302}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RafLab.Api", "RafLab.Api\RafLab.Api.csproj", "{4A630088-4700-4E7C-95FC-355286CBCDF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RafLab.UserTest", "RafLab.UserTest\RafLab.UserTest.csproj", "{68E9124A-C40F-4753-A55E-B1AE3C07A01F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FB9685F7-554D-47AD-B4CD-AD59A9485560}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +28,22 @@ Global
 		{2A840ED8-12B7-4368-BC2A-D0E2478B2881}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A840ED8-12B7-4368-BC2A-D0E2478B2881}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A840ED8-12B7-4368-BC2A-D0E2478B2881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{462CD4A9-2BEC-426E-921B-A057294C48AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{462CD4A9-2BEC-426E-921B-A057294C48AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{462CD4A9-2BEC-426E-921B-A057294C48AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{462CD4A9-2BEC-426E-921B-A057294C48AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82380952-7BDC-4DCA-8FCB-B6487C8DC302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82380952-7BDC-4DCA-8FCB-B6487C8DC302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82380952-7BDC-4DCA-8FCB-B6487C8DC302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82380952-7BDC-4DCA-8FCB-B6487C8DC302}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A630088-4700-4E7C-95FC-355286CBCDF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A630088-4700-4E7C-95FC-355286CBCDF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A630088-4700-4E7C-95FC-355286CBCDF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A630088-4700-4E7C-95FC-355286CBCDF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68E9124A-C40F-4753-A55E-B1AE3C07A01F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68E9124A-C40F-4753-A55E-B1AE3C07A01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68E9124A-C40F-4753-A55E-B1AE3C07A01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68E9124A-C40F-4753-A55E-B1AE3C07A01F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
